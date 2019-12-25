@@ -1,19 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 20 10:42:32 2019
-
-@author: rioto
-"""
-
 import tensorflow as tf
 import numpy as np
 import os
 import cv2
 from random import shuffle
-from keras.layers import Dense, Dropout, Conv2D, LeakyReLU, BatchNormalization, Flatten, Activation, MaxPooling2D, AveragePooling2D
-from keras.optimizers import Adagrad
-from keras.preprocessing.image import ImageDataGenerator
-from keras.models import Sequential, load_model
+from tensorflow.keras.layers import Dense, Dropout, Conv2D, LeakyReLU, BatchNormalization, Flatten, Activation, MaxPooling2D, AveragePooling2D
+from tensorflow.keras.optimizers import Adagrad
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.models import Sequential, load_model
 import gc
 
 SHAPE = (256, 256, 3)
